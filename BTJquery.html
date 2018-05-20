@@ -1,0 +1,77 @@
+﻿
+<html>
+
+<head>
+    <p style="color: darkgreen; font-size: 30px"><strong>BT1</strong></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // add code here
+            $("div").css("font-size", "100px");
+            $("div").css("margin-left", "200px");
+        });
+    </script>
+</head>
+
+<body>
+    <p>Sử dụng Jquery đặt lại font-size cho thẻ div là 100px và chuyển thẻ div sang trái 200px.
+    </p>
+    <div style="background:#98bf21;height:200px;width:600px;">Hello World</div>
+
+</body>
+
+</html>
+
+<html>
+
+<head>
+    <p style="color: darkred; font-size: 30px"><strong>BT2</strong></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("span").hover(function () {
+                $(this).hide();
+            });
+            $("input").on("click", function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Sử dụng jquery xử lý sự kiện khi nhập 1 ký tự vào ô nhập thì ô nhập biến mất và khi di chuyển chuột qua thẻ span thì
+        thẻ span biến mất</p>
+    <input type="text" value="Press any key inside me to hide me" size="40">
+
+    <span>If you mouse over me, I will disappear.</span>
+    <br>
+    <span>If you mouse over me, I will disappear.</span>
+
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+    <p style="color: navy; font-size: 30px"><strong>BT3</strong></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".test,#demo").hide();
+        });
+    </script>
+</head>
+
+<body>
+    <span> Sử dụng jquery ẩn đi tất cả các thẻ có class là test và các thẻ có id là demo
+        <h2 class="test">This is a heading</h2>
+
+        <p class="test">This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <p id="demo">This is a demo p.</p>
+</body>
+
+</html>
